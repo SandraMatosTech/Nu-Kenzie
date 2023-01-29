@@ -1,0 +1,58 @@
+.btnInserirValor{
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
+    gap: 10px;
+    color: white;
+    width: 314px;
+    height: 48px;
+    background: #FD377E;
+    border: 2px solid #FD377E;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+.form{
+    box-sizing: border-box;
+    width: 363px;
+    height: 351px;
+    background: #FFFFFF;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    display: flex;
+    align-items: flex-start;
+    
+}
+input{
+    width: 314px;
+    height: 52px;
+    margin-left: 20px;
+}
+select{
+    width: 150px;
+    height: 48px;
+}
+#valor{
+    width: 128px;
+    height: 48px;
+}
+.divValorTipoValor{
+    display: flex;
+    flex-direction: row;
+}
+.pExemplo{
+    align-items: flex-start;
+    display: flex;
+
+}

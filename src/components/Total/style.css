@@ -1,0 +1,11 @@
+.divValorTotal{
+    background: #FFFFFF;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    height: 96px;
+    width: 358px;
+    border-radius: 4px;
+}
+.pValorTotal{
+    margin: 20px;
+}

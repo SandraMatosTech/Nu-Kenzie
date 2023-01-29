@@ -1,0 +1,74 @@
+.liCard{
+    background: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    /* height: 96px;
+    width: 358px; */
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+    align-items: flex-start;
+
+
+}
+.ulCard{
+    background: #FFFFFF;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+  
+    border-radius: 4px;
+
+
+}
+.pResumoFinanceiro{
+    margin: 20px;
+}
+.divLis{
+    background: #FFFFFF;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    height: 96px;
+    width: 358px;
+    border-radius: 4px;
+
+}
+.pDescricao{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+.pTipo{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #343A40;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+
+}
+
+.pValor{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212529;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+.botaoDeletar{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
