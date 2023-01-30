@@ -1,31 +1,41 @@
 import React, { useState } from 'react'
-import {Header} from '../src/components/Header/index'
-import './App.css'
-import { Register } from '../src/components/Register/index.jsx'
-import { ValorTotal } from '../src/components/Total/index.jsx'
-import { ListaCards } from '../src/components/ListCards/index.jsx'
+import './style.css'
+import { ListaCards } from '../../components/ListCards'
+import { Register } from '../../components/Register'
+import { ValorTotal } from '../../components/Total'
+import NaoLancamento from '../../assets/NoCard.svg'
+import NaoLancamentoMobile from '../../assets/NoCardMobile.svg'
+import { Header } from '../../components/Header'
+
+
+
 
 // import { ListaCards } from './components/ListCards'
 
- function Dashboard() {
+function Dashboard({setPage}) {
   const [listTransactions, setListTransactions] = useState([])
- 
+
 
   return (
     <main>
 
-       
-      <Header/>
+      <div>
+        <Header setPage = {setPage}/>
+      </div>
+      <div className='divSections'>
+        <section className='sectionA' >
+          <Register setListTransactions={setListTransactions} listTransactions={listTransactions} />
+          <ValorTotal listTransactions={listTransactions} />
+        </section>
 
-   
-        <Register setListTransactions={setListTransactions} listTransactions={listTransactions}/>
-        {/* {listTransactions.map((user,index) => (
-          <Register key={index} descricao ={user.description} valor ={user.value} tipoValor ={user.type}/>
-        ))} */}
-        <ValorTotal listTransactions={listTransactions}/>
-        <ListaCards listTransactions={listTransactions} setListTransactions={setListTransactions}/> 
-            
- 
+        <section className='sectionB'>
+          <ListaCards listTransactions={listTransactions} setListTransactions={setListTransactions} />
+
+        </section>
+      </div>
+
+
+
     </main>
   )
 }

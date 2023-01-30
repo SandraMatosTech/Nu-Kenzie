@@ -29,3 +29,23 @@
    
 
 }
+@media (min-width: 476px) {
+
+    .Header{
+        height: 88px;
+        width: 1500px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+    }
+}
+
+@media (max-width: 476px) {
+
+    .Header{
+        height: 69px;
+        width: 390px;
+    }
+}

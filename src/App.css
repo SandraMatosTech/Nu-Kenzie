@@ -6,3 +6,20 @@
 }
 
 
+@media (min-width: 476) {
+ main{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+ }
+ .Header{
+  height: 88px;
+  max-width: 1500px;
+  width: 100%;
+
+}
+
+
+}
+ 
+

@@ -1,37 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import NuKenzie from '../../assets/NuKenzie.svg'
-import imgCentro from '../../assets/imgCentral.png'
-import { Link } from 'react-router-dom'
+import imgCentro from '../../assets/illustration (1).svg'
 
 
 
 
-const LadingPage = () => {
-  const [users,setUsers] = useState([])
-  const [page, setPage] = useState('LadingPage')
+const LandingPage = ({ setPage }) => {
+  const [users, setUsers] = useState([])
+  // const [page, setPage] = useState('LadingPage')
 
 
   return (
-    <main>
-
-  
-          {
-            page === 'LandingPage' ? <LadingPage/>
-            :
-            page=== <Dashboard/>
-          }
-
-          <img className ="logoNuKenzie" src = {NuKenzie} alt="" />
+    <main className='mainLandingPage'>
+      <div className='divSections'>
+        <section className='sectionTextos'>
+        <img className="logoNuKenzie" src={NuKenzie} alt="" />
           <p className='pTitulo'>Centralize o controle de suas finanças</p>
           <p className='pSubtitulo'> de forma rápida e segura</p>
+          <button className='btnIniciar' type='button' onClick={() => setPage(false)}>Iniciar</button>
+        </section>
 
 
-          <button className='btnIniciar' type='button' onClick={() => setPage(Dashboard)}>Iniciar</button>
-          <img className ="imgCentral" src = {imgCentro} alt="" />
+        <section className='sectionImagem'>
+          <img className="imgCentral" src={imgCentro} alt="" />
+
+        </section>      
+
+      </div>
 
     </main>
   )
 }
 
-export default  LadingPage
+export default LandingPage
