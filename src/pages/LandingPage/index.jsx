@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style.css'
 import NuKenzie from '../../assets/NuKenzie.svg'
-import imgCentro from '../../assets/illustration (1).svg'
+import imgCentro from '../../assets/illustration1.svg'
 
 
 
