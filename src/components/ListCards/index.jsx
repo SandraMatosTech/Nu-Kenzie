@@ -30,8 +30,9 @@ export function ListaCards({ listTransactions, setListTransactions }) {
             {
                 listTransactions.length === 0 ? (
                     <>
-                        <img className='imgNaoMobile' src={NaoLancamentoMobile} alt="" />
                         <img className='imgNaoDesktop' src={NaoLancamento} alt="" />
+                        <img className='imgNaoMobile' src={NaoLancamentoMobile} alt="" />
+
                     </>
 
                 ) : (

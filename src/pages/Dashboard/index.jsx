@@ -12,16 +12,18 @@ import { Header } from '../../components/Header'
 
 // import { ListaCards } from './components/ListCards'
 
-function Dashboard({setPage}) {
+function Dashboard({ setPage }) {
   const [listTransactions, setListTransactions] = useState([])
 
 
   return (
-    <main>
 
-      <div>
-        <Header setPage = {setPage}/>
+    <>
+    <div>
+        <Header setPage={setPage} />
       </div>
+
+      
       <div className='divSections'>
         <section className='sectionA' >
           <Register setListTransactions={setListTransactions} listTransactions={listTransactions} />
@@ -33,10 +35,12 @@ function Dashboard({setPage}) {
 
         </section>
       </div>
+    </>
+   
 
 
 
-    </main>
+
   )
 }
 

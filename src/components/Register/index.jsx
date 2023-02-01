@@ -35,22 +35,27 @@ export function Register({setListTransactions,listTransactions}){
         
             <label htmlFor='descricao'>Descrição</label> 
             <input type="text" placeholder="Digite aqui sua descrição" 
-            id='descricao' 
+            className='descricao' 
             onChange = {(event) => setDescricao(event.target.value)}></input>
             <p className='pExemplo'>Ex: Compra de roupas</p>
 
             <div className='divValorTipoValor'>
-                <label htmlFor='valor'>Valor</label> 
-                    <input type="text"
-                    id='valor'
-                    onChange=  {(event) => setValor(Number(event.target.value))}></input>
-                    
+                <div className='divValor'>
+                <label htmlFor='Valor'>Valor</label> 
+                <input type="text"
+                id='valor'
+                onChange=  {(event) => setValor(Number(event.target.value))}></input>
+                </div>
+                
+                <div className='divTipoValor'>
                 <label htmlFor='tipoValor' id='tipoValor'>Tipo de valor</label> 
                 <select  required onChange=  {(event) => setTipoValor(event.target.value)}>
                 <option selected value='entrada' >Entrada</option>
                 <option value='saída'>Saída</option>
 
-            </select>
+                </select>
+                </div>
+               
             </div>
             
            

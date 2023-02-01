@@ -8,25 +8,25 @@
     padding: 13px 20px;
     gap: 10px;
     color: white;
-    width: 314px;
+    width: 260px;
     height: 48px;
     background: #FD377E;
     border: 2px solid #FD377E;
     border-radius: 8px;
-    margin-left: 20px;
     margin-bottom: 10px;
 
 }
 .form{
     box-sizing: border-box;
-    width: 363px;
+    width: 300px;
     height: 351px;
-    background: #FFFFFF;
+    background: white;
     border: 1px solid #E9ECEF;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 15px;
 }
 
 label{
@@ -34,18 +34,21 @@ label{
     align-items: flex-start;
     
 }
+.descricao{
+
+}
 input{
-    width: 314px;
+    width: 250px;
     height: 52px;
-    margin-left: 20px;
 }
 select{
-    width: 150px;
+    width: 100px;
     height: 48px;
 }
 #valor{
-    width: 128px;
+    width: 75px;
     height: 48px;
+    border-radius: 8px;
 }
 .divValorTipoValor{
     display: flex;
@@ -55,4 +58,13 @@ select{
     align-items: flex-start;
     display: flex;
 
+}
+.divValor{
+    display: flex;
+    flex-direction: column;
+    margin-right: 36px;
+}
+.divTipoValor{
+    display: flex;
+    flex-direction:column;
 }

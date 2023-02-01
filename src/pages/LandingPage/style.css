@@ -8,7 +8,6 @@
     color: #FFFFFF;
     display: flex;
     text-align: left;
-    margin-left: 20px;
 
 }
 .mainLandingPage{
@@ -26,14 +25,13 @@
 }
 
 .btnIniciar{
+    font-size: 22px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 13px 20px;
-    gap: 10px;
-    width: 360px;
+     width: 360px;
     height: 48px;
     background: #FD377E;
     border: 2px solid #FD377E;
@@ -44,35 +42,43 @@
 }
 
 .logoNuKenzie{
-    background-color: white;
-    display: flex;
-    align-items: flex-start;
-    margin-right: 200px;
+    margin-top: 84px;
+    width: 122px;
+    height: 198px;
+
 
 }
-
-main{
-
+.sectionTextos{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    padding: 15px;
+    
 }
-@media (min-width: 476px) {
-    main{
-    display: flex;
-    align-items: center;
-    flex-direction: rown;
-    justify-content: center;
-    max-width: 1500px;
-    width: 100%;
 
-    }
+.imgCentral{
+    width: 348px;
+    height: 348px;
+
+}
+
+
+@media (min-width: 476px) {
+  
     .sectionTextos{
-        gap:60px;
         display: flex;
         flex-direction: column;
         padding: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 48px;
+    }
+    .imgCentral{
+        width: 593px;
+        height: 593px;
+    }
+    .btnIniciar{
+        width:241px;
+        height: 48px;
     }
     
 

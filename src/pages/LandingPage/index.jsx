@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './style.css'
-import NuKenzie from '../../assets/NuKenzie.svg'
+import NuKenzie from '../../assets/logoNuKenzie.svg'
 import imgCentro from '../../assets/principal.svg'
 
 
@@ -12,11 +12,12 @@ const LandingPage = ({ setPage }) => {
 
 
   return (
-    <main className='mainLandingPage'>
+    <div className='mainLandingPage'>
       <div className='divSections'>
         <section className='sectionTextos'>
         <img className="logoNuKenzie" src={NuKenzie} alt="" />
-          <p className='pTitulo'>Centralize o controle de suas finanças</p>
+          <h1 className='pTitulo'>Centralize o controle
+           de suas finanças</h1>
           <p className='pSubtitulo'> de forma rápida e segura</p>
           <button className='btnIniciar' type='button' onClick={() => setPage(false)}>Iniciar</button>
         </section>
@@ -29,7 +30,7 @@ const LandingPage = ({ setPage }) => {
 
       </div>
 
-    </main>
+    </div>
   )
 }
 
