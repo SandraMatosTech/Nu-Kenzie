@@ -1,19 +1,23 @@
 @media(min-width:475px){
   .divSections{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+  }
+
+
+}
+
+@media(min-width:1000px){
+  .divSections{
+    display: flex;
     justify-content: center;
     align-items: flex-start;
 
   }
 
-  .sectionA{
-
-  }
-
-  .sectionB{
-
-  }
 
 }
 
@@ -24,7 +28,4 @@ main{
   
   
 
-}
-body{
-  display: flex;
 }

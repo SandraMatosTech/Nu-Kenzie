@@ -13,7 +13,7 @@ const LandingPage = ({ setPage }) => {
 
   return (
     <div className='mainLandingPage'>
-      <div className='divSections'>
+      <div className='divSectionsLadingPage'>
         <section className='sectionTextos'>
         <img className="logoNuKenzie" src={NuKenzie} alt="" />
           <h1 className='pTitulo'>Centralize o controle
@@ -24,7 +24,9 @@ const LandingPage = ({ setPage }) => {
 
 
         <section className='sectionImagem'>
-          <img className="imgCentral" src={imgCentro} alt="" />
+          <img className="imgCentralMobile" src={imgCentro} alt="" />
+          <img className="imgCentralDesktop" src={imgCentro} alt="" />
+
 
         </section>      
 

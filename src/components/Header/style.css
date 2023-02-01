@@ -15,7 +15,8 @@
 }
 
 .Header{
-    width: 375px;
+    max-width: 300px;
+    width: 100%;
     height: 69px;
     display: flex;
     padding-left: 10px;
@@ -42,3 +43,12 @@
     }
 }
 
+
+@media(min-width:705px){
+    .Header{
+        max-width: 1500px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

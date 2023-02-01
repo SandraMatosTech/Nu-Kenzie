@@ -4,7 +4,7 @@
     border-radius: 4px;
     list-style: none;
     align-items: flex-start;
-    width: 292px;
+    width: 100%;
     border-radius: 4px;
     flex-direction:column;
     display: flex;
@@ -19,7 +19,7 @@
     width: 300px;
 
    }
-   .imgNaoDesktop{
+.imgNaoDesktop{
     display: none;
 
    }
@@ -35,14 +35,12 @@
 
 
 }
-.pResumoFinanceiro{
-    
-}
+
 .divLis{
     background: #FFFFFF;
-    border: 1px solid #E9ECEF;
     border-radius: 4px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     border-radius: 4px;
 
 }
@@ -84,23 +82,62 @@
 }
 
 @media (min-width: 475px) {
+
+    .imgNaoMobile{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
    .liCard{
-    width: 450px;
+    width: 100%;
     border-radius: 4px;
     display: flex;
     justify-content: space-around;
    }
 
    .ulCard{
-    width: 460px;
+    max-width: 460px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+        
+   }
+   .divLis{
+    width: 300px;
+
+
+   }
+  
+  
+
+
+  }
+
+
+   
+  @media (min-width: 900px) {
+    .imgNaoMobile{
+        display: none;
+    }
+   .liCard{
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .ulCard{
+    max-width: 460px;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    align-items: flex-start;
         
    }
    .divLis{
     width: 562px;
+    
 
 
    }
@@ -108,16 +145,12 @@
    .sectionB{
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
    }
    .imgNaoMobile{
     display: none;
-
    }
-   .imgNaoDesktop{
-    display: flex;
 
-   }
+ 
 
   }
    
