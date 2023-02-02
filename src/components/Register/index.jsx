@@ -26,15 +26,15 @@ export function Register({setListTransactions,listTransactions}){
             novoValor=valor
 
         }
+     
+        console.log({descricao,valor:novoValor, tipoValor})
         setListTransactions(  [...listTransactions,{descricao,valor:novoValor, tipoValor}])
         setDescricao('')
-        console.log(descricao)
 
-        // setValor(0)
+        setValor(0)
         setTipoValor("entrada")
 
     }
-    console.log(valor)
 
     return(
         <form className='form' onSubmit={handleSubmit}>
@@ -61,8 +61,8 @@ export function Register({setListTransactions,listTransactions}){
                 <div className='divTipoValor'>
                 <label htmlFor='tipoValor' id='tipoValor'>Tipo de valor</label> 
                 <select className='select' required onChange=  {(event) => setTipoValor(event.target.value)}>
-                <option selected value='entrada' >Entrada</option>
-                <option value='saída'>Saída</option>
+                <option selected value='Entrada' >Entrada</option>
+                <option value='Despesa'>Despesa</option>
 
                 </select>
                 </div>

@@ -41,13 +41,24 @@ export function ListaCards({ listTransactions, setListTransactions }) {
                              listTransactions.map((dados,index) => {
                                 return (
                                         <li key={index} className="liCard">
+                                            <div className='divLiDesktop'>
                                             <p className='pDescricao'>  {dados.descricao}</p>
-                                            <p className='pTipo'>  {dados.novoValor}</p>
-                                            <p className='pValor'> {dados.tipoValor}</p>
+                                            <p className='pValor'> {dados.valor}</p>
                                             <button onClick={() => { deletarLi(dados) }} className='botaoDeletar'> <img className="deletar" src={deletar} alt="" /></button>
+                                            </div>
+                                            <p className='pTipo'>  {dados.tipoValor}</p>
+
                 
                                         </li>
+                                        
+
+
+
                                         )
+
+                                
+
+                                    
                                
                 
                 
