@@ -10,8 +10,11 @@ export function Header( {setPage}) {
     return (
 
         <header className="Header">
-            <img className ="logoNuKenzie2" src = {NuKenzie} alt="" />
-            <button type='button' className='btnHeaderIniciar' onClick={ () => {setPage (true)}} >Inicio</button>
+            <div className='divContainerHeader'>
+                <img className ="logoNuKenzie2" src = {NuKenzie} alt="" />
+                <button type='button' className='btnHeaderIniciar' onClick={ () => {setPage (true)}} >Inicio</button>
+            </div>
+      
         </header>
     )
 }

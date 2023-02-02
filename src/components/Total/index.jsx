@@ -1,13 +1,18 @@
 import './style.css'
-// import { Register } from '../Register'
+import { Register } from '../Register'
 
 export function ValorTotal({listTransactions}){
-    const somaTotal = listTransactions.reduce((valorAntigo,valorNovo)=> (valorAntigo+valorNovo.novoValor),0)
+    console.log(listTransactions)
+    const somaTotal = listTransactions.reduce((valorAntigo,valorNovo)=> (valorAntigo+valorNovo.valor),0)
 
     return(
         <div className='divValorTotal'>
-            <p>Valor total:</p> <span> {somaTotal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}
-            <p className='pValorTotal'>O valor se refere ao saldo</p></span>
+            <div className='divValorTotalSpan'>
+                <p className='pTituloValorTotal'>Valor total:</p>
+                <span className='total'> {somaTotal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</span>
+            </div>
+            
+            <p className='pValorTotal'>O valor se refere ao saldo</p>
 
            
         </div>

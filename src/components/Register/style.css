@@ -34,7 +34,8 @@ label{
     align-items: flex-start;
     
 }
-.descricao{
+.pDescricao{
+    margin-left: 10px;
 
 }
 input{
@@ -67,4 +68,14 @@ select{
 .divTipoValor{
     display: flex;
     flex-direction:column;
+}
+.inputValorSoma{
+    padding: 16px;
+    box-sizing: border-box;
+
+}
+select{
+    padding: 10px;
+    box-sizing: border-box;
+
 }

@@ -19,12 +19,12 @@ function Dashboard({ setPage }) {
   return (
 
     <>
-    <div>
+  
         <Header setPage={setPage} />
-      </div>
+
 
       
-      <div className='divSections'>
+      <main className='divSections'>
         <section className='sectionA' >
           <Register setListTransactions={setListTransactions} listTransactions={listTransactions} />
           <ValorTotal listTransactions={listTransactions} />
@@ -34,7 +34,7 @@ function Dashboard({ setPage }) {
           <ListaCards listTransactions={listTransactions} setListTransactions={setListTransactions} />
 
         </section>
-      </div>
+      </main>
     </>
    
 
