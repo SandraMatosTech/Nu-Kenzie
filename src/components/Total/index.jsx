@@ -1,4 +1,6 @@
-import './style.css'
+import './style.css';
+import '../../styles/globalStyles.css'
+import '../../styles/reset.css'
 import { Register } from '../Register'
 
 export function ValorTotal({listTransactions}){

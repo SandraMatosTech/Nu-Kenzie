@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import './style.css'
+import './style.css';
+import '../../styles/globalStyles.css'
+import '../../styles/reset.css'
 import { ListaCards } from '../../components/ListCards'
 import { Register } from '../../components/Register'
 import { ValorTotal } from '../../components/Total'

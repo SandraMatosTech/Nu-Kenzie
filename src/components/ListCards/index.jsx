@@ -1,4 +1,6 @@
-import './style.css'
+import './style.css';
+import '../../styles/globalStyles.css'
+import '../../styles/reset.css'
 import deletar from '../../assets/trash.svg'
 import NaoLancamento from '../../assets/NoCard.svg'
 import NaoLancamentoMobile from '../../assets/NoCardMobile.svg'

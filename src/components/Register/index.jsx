@@ -1,4 +1,6 @@
 import './style.css';
+import '../../styles/globalStyles.css'
+import '../../styles/reset.css'
 import { useState } from 'react';
 
 export function Register({ setListTransactions, listTransactions }) {
