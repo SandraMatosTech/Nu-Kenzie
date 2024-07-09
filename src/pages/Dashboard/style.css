@@ -1,7 +1,8 @@
 .divSections {
+  display: flex;
+  justify-content: center;
   flex-direction: row;
   padding-top: 24px;
-  display: flex;
   max-width: var(--container-1);
   margin: 0 auto;
   padding-top: 12px;
@@ -34,6 +35,8 @@ main {
 
 @media screen and (max-width: 769px) {
   .divSections {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
     padding-top: 24px;
     display: flex;
