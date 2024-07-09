@@ -1,26 +1,22 @@
 import './style.css';
-import '../../styles/globalStyles.css'
-import '../../styles/reset.css'
 import { useState } from 'react';
 
 export function Register({ setListTransactions, listTransactions }) {
     const [descricao, setDescricao] = useState('');
-    const [valor, setValor] = useState(0.00);
+    const [valor, setValor] = useState('');
     const [tipoValor, setTipoValor] = useState('Entrada');
 
     function handleSubmit(event) {
         event.preventDefault();
-        let novoValor = 0.00;
+        let novoValor = parseFloat(valor);
 
         if (tipoValor === 'Despesa') {
-            novoValor = -valor;
-        } else {
-            novoValor = valor;
+            novoValor = -novoValor;
         }
 
         setListTransactions([...listTransactions, { descricao, valor: novoValor, tipoValor }]);
         setDescricao('');
-        setValor(0.00);
+        setValor('');
         setTipoValor('Entrada');
     }
 
@@ -38,16 +34,16 @@ export function Register({ setListTransactions, listTransactions }) {
 
             <div className='divValorTipoValor'>
                 <div className='divValor'>
-                    <label htmlFor='valor'>Valor</label>
+                    <label htmlFor='valor' className='labelValor'>Valor</label>
+                    <span className='cifrao'>R$</span>
                     <input
                         type='text'
                         placeholder='0.00'
                         className='inputValorSoma'
                         value={valor}
                         id='valor'
-                        onChange={(event) => setValor(parseFloat(event.target.value))}
+                        onChange={(event) => setValor(event.target.value)}
                     />
-                    <span className='cifrao'>R$</span>
                 </div>
 
                 <div className='divTipoValor'>

@@ -127,11 +127,6 @@
   }
 }
 
-@media (min-width: 1024px) { /* Tamanho do liCard ajustado para desktop */
-  .liCard {
-    width: 800px;
-  }
-}
 
 @media screen and (max-width: 769px) {
   .ulCard {

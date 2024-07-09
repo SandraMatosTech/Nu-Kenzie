@@ -5,6 +5,8 @@
   max-width: var(--container-1);
   margin: 0 auto;
   padding-top: 12px;
+  justify-content: center;
+  gap:30px
 }
 .btnIniciar {
   width: 240px;
@@ -25,8 +27,8 @@ main {
   color: var(--color-grey-4);
   padding: 20px;
   margin: 24px auto;
-  width: 90%;
-  max-width: 364px;
+  /* width: 90%;
+  max-width: 364px; */
   font-family: var(--font-family-1);
 }
 
@@ -45,7 +47,7 @@ main {
     margin-top: 24px;
   }
   aside {
-    width: 100%;
+    width: 50%;
   }
   .btnIniciar {
     background-color: var(--color-primary-1);

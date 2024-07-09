@@ -140,4 +140,13 @@
     background-color: var(--color-grey-3);
     color: var(--color-grey-1);
   }
-  
+  body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    outline: none;
+  }

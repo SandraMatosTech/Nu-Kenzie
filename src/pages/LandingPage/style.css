@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: var(--color-white);
-  background-color: var(--color-grey-4);
   font-family: var(--font-family-1);
+  color: var(--color-white);
+  background-color: black;
 }
 .container {
   flex-direction: row;
