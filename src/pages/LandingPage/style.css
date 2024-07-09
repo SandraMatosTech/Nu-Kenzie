@@ -36,8 +36,11 @@
   background-color: var(--color-primary-1);
   color: var(--color-white);
   border-radius: var(--radius-3);
-  padding: 14px 97px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
 }
+
 .sectionImagem {
   max-width: 100%;
   overflow: clip;

@@ -1,18 +1,21 @@
-.divSections{
+.divSections {
   flex-direction: row;
   padding-top: 24px;
   display: flex;
   max-width: var(--container-1);
   margin: 0 auto;
   padding-top: 12px;
-
 }
-main{
+.btnIniciar {
+  width: 240px;
+  padding: 14px 97px;
+}
+main {
   width: 50%;
   margin-top: 24px;
 }
 
-.valorTotal{
+.valorTotal {
   background-color: var(--color-grey-1);
   border: 1px solid var(--color-grey-2);
   border-radius: var(--radius-2);
@@ -27,10 +30,8 @@ main{
   font-family: var(--font-family-1);
 }
 
-
-
 @media screen and (max-width: 769px) {
-  .divSections{
+  .divSections {
     flex-direction: row;
     padding-top: 24px;
     display: flex;
@@ -38,16 +39,20 @@ main{
     max-width: var(--container-1);
     margin: 0 auto;
     padding-top: 12px;
-
   }
-  main{
+  main {
     width: 50%;
     margin-top: 24px;
   }
-  aside{
+  aside {
     width: 100%;
   }
-  .valorTotal{
+  .btnIniciar {
+    background-color: var(--color-primary-1);
+    color: var(--color-white);
+    border-radius: var(--radius-3);
+  }
+  .valorTotal {
     background-color: var(--color-grey-1);
     border: 1px solid var(--color-grey-2);
     border-radius: var(--radius-2);
@@ -61,7 +66,4 @@ main{
     max-width: 364px;
     font-family: var(--font-family-1);
   }
-
-
-
 }

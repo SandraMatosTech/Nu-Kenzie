@@ -7,7 +7,6 @@
     padding: 13px 20px;
     gap: 10px;
     color: white;
-    width: 260px;
     height: 48px;
     background: #FD377E;
     border: 2px solid #FD377E;
@@ -54,6 +53,9 @@ select {
     padding-left: 12px;
     color: var(--color-grey-5);
     height: 48px;
+    font-size: var(--font-text-2);
+    font-weight: var(--font-weight-4);
+    line-height: var(--line-heigth-5);
 }
 
 #valor {
