@@ -19,13 +19,8 @@ export function ListaCards({ listTransactions, setListTransactions }) {
     }
 
     return (
-        <div className='divLis'>
+        <div className='mainDivList'>
             <p className='pResumoFinanceiro'>Resumo financeiro</p>
-
-
-
-
-
 
             {
                 listTransactions.length === 0 ? (
@@ -38,40 +33,30 @@ export function ListaCards({ listTransactions, setListTransactions }) {
                 ) : (
                     <ul className='ulCard'>
                         {
-                             listTransactions.map((dados,index) => {
+                            listTransactions.map((dados, index) => {
                                 return (
-                                        <li key={index} className="liCard">
-                                            <div className='divLiDesktop'>
+                                    <li key={index} className="liCard">
+                                        <div className='divDescricaoValor'>
                                             <p className='pDescricao'>  {dados.descricao}</p>
-                                            <p className='pValor'> {dados.valor}</p>
-                                            <button onClick={() => { deletarLi(dados) }} className='botaoDeletar'> <img className="deletar" src={deletar} alt="" /></button>
-                                            </div>
+                                            <p className='pValor'>R$ {dados.valor}</p>
+
+                                        </div>
+                                        <div className='divTipoBtn'>
                                             <p className='pTipo'>  {dados.tipoValor}</p>
-
-                
-                                        </li>
-                                        
+                                            <button onClick={() => { deletarLi(dados) }} className='botaoDeletar'> <img className="deletar" src={deletar} alt="" /></button>
 
 
 
-                                        )
+                                        </div>
+                                    </li>
 
-                                
+                                )
 
-                                    
-                               
-                
-                
                             })
                         }
-           
-
                     </ul>
-
                 )}
-       
         </div>
-
     )
 
 

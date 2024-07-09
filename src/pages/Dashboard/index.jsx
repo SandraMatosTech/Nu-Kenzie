@@ -9,37 +9,27 @@ import { Header } from '../../components/Header'
 
 
 
-
-// import { ListaCards } from './components/ListCards'
-
 function Dashboard({ setPage }) {
   const [listTransactions, setListTransactions] = useState([])
 
-
   return (
-
     <>
-  
-        <Header setPage={setPage} />
 
-
-      
-      <main className='divSections'>
-        <section className='sectionA' >
+      <Header setPage={setPage} />
+      <div className='divSections'>
+        <aside >
           <Register setListTransactions={setListTransactions} listTransactions={listTransactions} />
-          <ValorTotal listTransactions={listTransactions} />
-        </section>
-
-        <section className='sectionB'>
-          <ListaCards listTransactions={listTransactions} setListTransactions={setListTransactions} />
-
-        </section>
-      </main>
+          <section className='valorTotal'>
+            <ValorTotal listTransactions={listTransactions} />
+          </section>
+        </aside>
+        <main>
+          <section >
+            <ListaCards listTransactions={listTransactions} setListTransactions={setListTransactions} />
+          </section>
+        </main>
+      </div>
     </>
-   
-
-
-
 
   )
 }

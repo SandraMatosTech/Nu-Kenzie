@@ -1,5 +1,4 @@
-.btnInserirValor{
-    
+.btnInserirValor {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -14,68 +13,112 @@
     border: 2px solid #FD377E;
     border-radius: 8px;
     margin-bottom: 10px;
-
 }
-.form{
-    box-sizing: border-box;
-    width: 300px;
-    height: 351px;
-    background: white;
-    border: 1px solid #E9ECEF;
-    border-radius: 4px;
+
+.form {
+    border: 1px solid var(--color-grey-2);
+    border-radius: var(--radius-2);
+    background-color: var(--color-grey-1);
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 15px;
+    gap: 24px;
+    color: var(--color-grey-4);
+    padding: 20px;
+    margin: 24px auto;
+    width: 90%;
+    max-width: 364px;
+    font-family: var(--font-family-1);
+    position: relative;
 }
 
-label{
+label {
     display: flex;
     align-items: flex-start;
-    
 }
-.pDescricao{
-    margin-left: 10px;
 
+.pDescricao {
+    margin-left: 10px;
 }
-input{
-    width: 250px;
-    height: 52px;
-}
-select{
-    width: 100px;
+
+input {
+    border: 1px solid var(--color-grey-2);
+    border-radius: var(--radius-2);
+    padding-left: 12px;
+    color: var(--color-grey-5);
     height: 48px;
 }
-#valor{
+
+select {
+    border: 1px solid var(--color-grey-2);
+    border-radius: var(--radius-2);
+    padding-left: 12px;
+    color: var(--color-grey-5);
+    height: 48px;
+}
+
+#valor {
     width: 75px;
     height: 48px;
     border-radius: 8px;
 }
-.divValorTipoValor{
+
+.divValorTipoValor {
     display: flex;
     flex-direction: row;
 }
-.pExemplo{
+
+.pExemplo {
     align-items: flex-start;
     display: flex;
-
 }
-.divValor{
+
+.divValor {
     display: flex;
     flex-direction: column;
     margin-right: 36px;
+    position: relative;
+    gap: 8px;
+    width: 40%;
 }
-.divTipoValor{
-    display: flex;
-    flex-direction:column;
+.cifrao{
+    position: absolute;
+    left: 8px;
+    bottom: 16px;
 }
-.inputValorSoma{
-    padding: 16px;
-    box-sizing: border-box;
 
+.divTipoValor {
+    display: flex;
+    flex-direction: column;
 }
-select{
+
+.inputValorSoma {
+    padding-left: 36px; /* Espaço para o R$ */
+    box-sizing: border-box;
+    -moz-appearance: textfield; /* Remove setas em Firefox */
+}
+
+.inputValorSoma::-webkit-inner-spin-button,
+.inputValorSoma::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove setas em Chrome */
+    margin: 0;
+}
+
+.inputValorSoma::before {
+    content: "R$";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-grey-5);
+    font-size: 16px;
+    border: 1px solid var(--color-grey-2);
+    border-radius: var(--radius-2);
+    padding-left: 12px;
+    color: var(--color-grey-5);
+    height: 48px;
+}
+
+select {
     padding: 10px;
     box-sizing: border-box;
-
 }

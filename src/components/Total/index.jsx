@@ -6,7 +6,7 @@ export function ValorTotal({listTransactions}){
     const somaTotal = listTransactions.reduce((valorAntigo,valorNovo)=> (valorAntigo+valorNovo.valor),0)
 
     return(
-        <div className='divValorTotal'>
+        <div className='mainTotal'>
             <div className='divValorTotalSpan'>
                 <p className='pTituloValorTotal'>Valor total:</p>
                 <span className='total'> {somaTotal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</span>
