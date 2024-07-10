@@ -24,6 +24,8 @@
     color: var(--color-grey-4);
     padding: 20px;
     margin: 24px auto;
+    width: 90%;
+    max-width: 364px;
     font-family: var(--font-family-1);
 }
 

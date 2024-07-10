@@ -18,7 +18,7 @@ function Dashboard({ setPage }) {
     <>
 
       <Header setPage={setPage} />
-      <div className='divSections'>
+      <main className='divSectionsMain'>
         <aside >
           <Register setListTransactions={setListTransactions} listTransactions={listTransactions} />
           <section className='valorTotal'>
@@ -30,7 +30,7 @@ function Dashboard({ setPage }) {
             <ListaCards listTransactions={listTransactions} setListTransactions={setListTransactions} />
           </section>
         </main>
-      </div>
+      </main>
     </>
 
   )

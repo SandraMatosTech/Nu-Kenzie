@@ -1,18 +1,16 @@
-.divSections {
+.divSectionsMain {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  padding-top: 24px;
   max-width: var(--container-1);
   margin: 0 auto;
-  padding-top: 12px;
-  justify-content: center;
-  gap:30px
+  padding-top: 24px;
 }
+
 .btnIniciar {
   width: 240px;
   padding: 14px 97px;
 }
+
 main {
   width: 50%;
   margin-top: 24px;
@@ -28,47 +26,34 @@ main {
   color: var(--color-grey-4);
   padding: 20px;
   margin: 24px auto;
-  /* width: 90%;
-  max-width: 364px; */
+  width: 90%;
+  max-width: 364px;
   font-family: var(--font-family-1);
 }
 
 @media screen and (max-width: 769px) {
-  .divSections {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 24px;
+  .divSectionsMain {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-top: 24px;
     max-width: var(--container-1);
     margin: 0 auto;
     padding-top: 12px;
+    gap: 30px;
   }
   main {
-    width: 50%;
+    width: 90%;
     margin-top: 24px;
   }
   aside {
-    width: 50%;
+    width: 90%;
   }
   .btnIniciar {
     background-color: var(--color-primary-1);
     color: var(--color-white);
     border-radius: var(--radius-3);
-  }
-  .valorTotal {
-    background-color: var(--color-grey-1);
-    border: 1px solid var(--color-grey-2);
-    border-radius: var(--radius-2);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    color: var(--color-grey-4);
-    padding: 20px;
-    margin: 24px auto;
-    width: 90%;
-    max-width: 364px;
-    font-family: var(--font-family-1);
+    width: 100%;
+    padding: 14px 0;
   }
 }
