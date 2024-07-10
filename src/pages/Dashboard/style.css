@@ -30,6 +30,19 @@ main {
   max-width: 364px;
   font-family: var(--font-family-1);
 }
+@media screen and (min-width: 769px) {
+  .divSectionsMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 24px;
+    max-width: var(--container-1);
+    margin: 0 auto;
+    padding-top: 12px;
+    gap: 30px;
+  }
+
+}
 
 @media screen and (max-width: 769px) {
   .divSectionsMain {
