@@ -18,7 +18,7 @@ Nu Kenzie é uma aplicação voltada para o gerenciamento financeiro, onde é po
 
 Para rodar o projeto localmente, siga os passos abaixo:
 
-1. **Clone o Repositório**
+ **Clone o Repositório**
 
    Clone o repositório do projeto para o seu ambiente local:
 
@@ -26,7 +26,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
    git clone https://github.com/SandraMatosTech/Nu-Kenzie.git
 Instale as Dependências
 
-2.**Navegue até o diretório do projeto clonado e instale as dependências usando o Yarn:**
+**Navegue até o diretório do projeto clonado e instale as dependências usando o Yarn:**
 
 bash
 Copiar código
@@ -34,7 +34,7 @@ cd Nu-Kenzie
 yarn install
 Configure o Ambiente
 
-3.**Verifique se há algum arquivo de configuração de ambiente necessário, como um arquivo .env. Se houver, crie um arquivo .env com as variáveis de ambiente necessárias conforme as instruções no README ou na documentação do projeto.**
+**Verifique se há algum arquivo de configuração de ambiente necessário, como um arquivo .env. Se houver, crie um arquivo .env com as variáveis de ambiente necessárias conforme as instruções no README ou na documentação do projeto.**
 
 Inicie o Servidor de Desenvolvimento
 
