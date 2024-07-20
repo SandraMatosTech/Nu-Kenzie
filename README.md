@@ -26,7 +26,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
    git clone https://github.com/SandraMatosTech/Nu-Kenzie.git
 Instale as Dependências
 
-**Navegue até o diretório do projeto clonado e instale as dependências usando o Yarn:**
+* Navegue até o diretório do projeto clonado e instale as dependências usando o Yarn:
 
 bash
 Copiar código
@@ -34,7 +34,7 @@ cd Nu-Kenzie
 yarn install
 Configure o Ambiente
 
-**Verifique se há algum arquivo de configuração de ambiente necessário, como um arquivo .env. Se houver, crie um arquivo .env com as variáveis de ambiente necessárias conforme as instruções no README ou na documentação do projeto.**
+* Verifique se há algum arquivo de configuração de ambiente necessário, como um arquivo .env. Se houver, crie um arquivo .env com as variáveis de ambiente necessárias conforme as instruções no README ou na documentação do projeto.**
 
 Inicie o Servidor de Desenvolvimento
 
@@ -45,6 +45,6 @@ Copiar código
 yarn dev
 Isso iniciará o Vite, e você deverá ver uma mensagem informando em qual URL a aplicação está rodando localmente, geralmente http://localhost:3000.
 
-4.**Acesse a Aplicação**
+* Acesse a Aplicação
 
 Abra o seu navegador e vá para o endereço http://localhost:3000 para ver a aplicação Nu Kenzie rodando localmente.
